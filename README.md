@@ -23,7 +23,7 @@ This app has been created using Flutter
 * another_flushbar: ^1.12.29
 
 # APK
-* https://github.com/HA-Qodex/newsapp/blob/master/download/app-release.apk
+* [Download](https://drive.google.com/file/d/1zqelP6Ndndh7flE34rankespTEWxv5Ij/view?usp=sharing)
 
 # Screenshots
 <img src="screenshots/Screenshot_1.jpg" width="300" height="666">  <img src="screenshots/Screenshot_2.jpg" width="300" height="666">
