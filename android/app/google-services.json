@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "107274298643",
+    "project_id": "flutter-205f6",
+    "storage_bucket": "flutter-205f6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107274298643:android:a62057d3f9e1728527e6e6",
+        "android_client_info": {
+          "package_name": "com.sigma.newsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "107274298643-87ha61jtkjeoabksk4sk82uh228fvtdu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7G2KHe7Wr8vzHGniUH7bnjMgMlBUVkBU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "107274298643-87ha61jtkjeoabksk4sk82uh228fvtdu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
