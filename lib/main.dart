@@ -1,12 +1,11 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:get/get.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:newsapp/resources/app_colors.dart';
+import 'package:newsapp/routes/routes.dart';
 
-import 'app/resources/app_colors.dart';
-import 'app/routes/app_pages.dart';
-
-void main()async{
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
 
@@ -15,7 +14,7 @@ void main()async{
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
     statusBarColor: Colors.transparent,
   ));
-  runApp(const MyApp());
+  runApp(const ProviderScope(child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -23,15 +22,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
+    return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       title: 'News App',
       theme: ThemeData(
         primarySwatch: AppColors.themeColor,
       ),
-      initialRoute: AppPages.INITIAL,
-      getPages: AppPages.routes,
+      routerConfig: appRouter,
     );
   }
 }
-
